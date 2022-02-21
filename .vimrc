@@ -23,6 +23,18 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
+" CTRL + P view file list
+" Use Ctrl + e to view the current buffer, and use Ctrl + e twice to quickly switch the last opened buffer
+nmap <C-p> :Files<CR>
+nmap <C-e> :Buffers<CR>
+let g:fzf_action = { 'ctrl-e': 'edit' }
+
+" fzf file fuzzy search that respects .gitignore
+" If in git directory, show only files that are committed, staged, or unstaged
+" else use regular :Files
+" https://rietta.com/blog/hide-gitignored-files-fzf-vim/
+" nnoremap <expr> <C-p> (len(system('git rev-parse')) ? ':Files' : ':GFiles --exclude-standard --others --cached')."\<cr>"
+
 call plug#begin()
 Plug 'flazz/vim-colorschemes' "A bunch of colorschemes
 "Begin Set up vim like an IDE
@@ -38,6 +50,9 @@ Plug 'preservim/nerdcommenter'
 Plug 'dyng/ctrlsf.vim' "Enables asynchronously searching the file system. 
 Plug 'ervandew/supertab'
 Plug 'PhilRunninger/nerdtree-visual-selection'
+" fuzzy finder, let's try this instead of nerdtree
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 "Plug 'neoclide/coc.nvim', {'branch': 'release'} "Conquer of Completion (code completion)
 "End Set up vim like an IDE
 call plug#end()
