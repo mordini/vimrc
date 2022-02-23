@@ -12,3 +12,6 @@ cat ./extraconfigs/fzf-fdfind >> ~/.bashrc
 
 ## Add ripgrep to fzf
 ## cat ./extraconfigs/fzf-ripgrep >> ~/.bashrc
+
+## we need to resource .bashrc
+source ~/.bashrc
