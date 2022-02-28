@@ -42,7 +42,6 @@ Plug 'prettier/vim-prettier'
 Plug 'jiangmiao/auto-pairs' "close quotes, brackets, etc etc
 Plug 'alvan/vim-closetag' "automatically close (x)html tags
 Plug 'tpope/vim-surround' "change matching "surrounds" like <b> </b> using "csX" (change.surround.X)
-Plug 'storyn26383/vim-vue' "Highlighting for vue files
 Plug 'preservim/nerdcommenter' "Comment stuff out
 Plug 'preservim/tagbar'
 Plug 'preservim/nerdtree'
