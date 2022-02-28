@@ -42,11 +42,10 @@ Plug 'prettier/vim-prettier'
 Plug 'jiangmiao/auto-pairs' "close quotes, brackets, etc etc
 Plug 'alvan/vim-closetag' "automatically close (x)html tags
 Plug 'tpope/vim-surround' "change matching "surrounds" like <b> </b> using "csX" (change.surround.X)
-Plug 'sheerun/vim-polyglot' "Syntax highlighting / language packs indentaation
-Plug 'preservim/nerdcommenter' "Syntax highlighting
+Plug 'storyn26383/vim-vue' "Highlighting for vue files
+Plug 'preservim/nerdcommenter' "Comment stuff out
 Plug 'preservim/tagbar'
 Plug 'preservim/nerdtree'
-Plug 'preservim/nerdcommenter'
 Plug 'dyng/ctrlsf.vim' "Enables asynchronously searching the file system. 
 Plug 'ervandew/supertab'
 Plug 'PhilRunninger/nerdtree-visual-selection'
