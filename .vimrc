@@ -8,6 +8,11 @@ set incsearch  " Enable incremental search
 set hlsearch   " Enable highlight search
 filetype plugin indent on
 
+" Set up COC for vanilla vim
+set hidden
+set updatetime=300
+set shortmess=aFc
+
 inoremap <Down>  <NOP>
 inoremap <Left>  <NOP>
 inoremap <Right> <NOP>
@@ -50,7 +55,7 @@ Plug 'PhilRunninger/nerdtree-visual-selection'
 " fuzzy finder, let's try this instead of nerdtree
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-"Plug 'neoclide/coc.nvim', {'branch': 'release'} "Conquer of Completion (code completion)
+Plug 'neoclide/coc.nvim', {'branch': 'release'} "Conquer of Completion (code completion)
 "End Set up vim like an IDE
 call plug#end()
 
