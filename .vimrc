@@ -6,8 +6,6 @@ syntax on "enable syntax highlighting
 set expandtab "Use spaces when tabbing
 set incsearch  " Enable incremental search
 set hlsearch   " Enable highlight search
-"Create default mappings for nerdcommenter
-let g:NERDCreateDefaultMappings = 1
 filetype plugin indent on
 
 inoremap <Down>  <NOP>
@@ -38,11 +36,12 @@ let g:fzf_action = { 'ctrl-e': 'edit' }
 call plug#begin()
 Plug 'flazz/vim-colorschemes' "A bunch of colorschemes
 "Begin Set up vim like an IDE
+Plug 'sheerun/vim-polyglot' "A collection of language packs for Vim.
 Plug 'prettier/vim-prettier'
 Plug 'jiangmiao/auto-pairs' "close quotes, brackets, etc etc
 Plug 'alvan/vim-closetag' "automatically close (x)html tags
 Plug 'tpope/vim-surround' "change matching "surrounds" like <b> </b> using "csX" (change.surround.X)
-Plug 'preservim/nerdcommenter' "Comment stuff out
+Plug 'tomtom/tcomment_vim' " Comment stuff out
 Plug 'preservim/tagbar'
 Plug 'preservim/nerdtree'
 Plug 'dyng/ctrlsf.vim' "Enables asynchronously searching the file system. 
