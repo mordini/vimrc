@@ -13,5 +13,8 @@ cat ./extraconfigs/fzf-fdfind >> ~/.bashrc
 ## Add ripgrep to fzf
 ## cat ./extraconfigs/fzf-ripgrep >> ~/.bashrc
 
+## setup for neovim
+cp -r ./extraconfigs/nvim ~/.config/
+
 ## we need to resource .bashrc
 source ~/.bashrc
