@@ -1,5 +1,5 @@
 ## Link .vimrc
-ln -s ~/vimrc ~/.vim && echo "source ~/vimrc/.vimrc" > ~/.vimrc
+ln -s ~/.vimrc ~/.vim && echo "source ~/.vimrc/.vimrc" > ~/.vimrc
 
 ## install fd
 sudo apt install fd-find
