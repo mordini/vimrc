@@ -8,6 +8,15 @@ set incsearch  " Enable incremental search
 set hlsearch   " Enable highlight search
 filetype plugin indent on
 
+" enable prettier
+packloadall
+
+" Uncomment if you wish to have the .vimrc settings purely control prettier
+"let g:prettier#config#config_precedence = 'file-override'
+
+" single quotes over double quotes
+let g:prettier#config#single_quote = 'true'
+
 " Set up COC for vanilla vim
 set hidden
 set updatetime=300
@@ -42,7 +51,10 @@ call plug#begin()
 Plug 'flazz/vim-colorschemes' "A bunch of colorschemes
 "Begin Set up vim like an IDE
 Plug 'sheerun/vim-polyglot' "A collection of language packs for Vim.
-Plug 'prettier/vim-prettier'
+
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', { 'do': 'npm install'  }
+
 Plug 'jiangmiao/auto-pairs' "close quotes, brackets, etc etc
 Plug 'alvan/vim-closetag' "automatically close (x)html tags
 Plug 'tpope/vim-surround' "change matching "surrounds" like <b> </b> using "csX" (change.surround.X)
@@ -70,6 +82,7 @@ colorscheme simple_dark
 " These are the file extensions where this plugin is enabled.
 "
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.vue'
+
 
 " filenames like *.xml, *.xhtml, ...
 " This will make the list of non-closing tags self-closing in the specified files.
