@@ -29,7 +29,8 @@ noremap  <Up>    <NOP>
 noremap  <Down>  <NOP>
 noremap  <Left>  <NOP>
 noremap  <Right> <NOP>
-noremap <Leader>b :ls<CR>:b " buffer switcher
+" buffer switcher
+noremap <Leader>b :ls<CR>:b
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
