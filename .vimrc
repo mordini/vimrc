@@ -74,7 +74,8 @@ call plug#end()
 
 set t_Co=256
 "colorscheme Tomorrow-Night-Bright
-colorscheme simple_dark 
+"colorscheme simple_dark 
+colorscheme DimRed
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 ""If you're using tmux version 2.2 or later, you can remove the outermost
