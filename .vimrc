@@ -8,6 +8,11 @@ set incsearch  " Enable incremental search
 set hlsearch   " Enable highlight search
 filetype plugin indent on
 
+" Enable vim-javascript
+syntax enable
+" Enable javascript-libraries-syntax for Vue
+let g:used_javascript_libs = 'vue'
+
 " enable prettier
 packloadall
 
