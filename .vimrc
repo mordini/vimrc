@@ -51,9 +51,8 @@ let g:fzf_action = { 'ctrl-e': 'edit' }
 call plug#begin()
 Plug 'flazz/vim-colorschemes' "A bunch of colorschemes
 "Begin Set up vim like an IDE
-"Plug 'sheerun/vim-polyglot' "A collection of language packs for Vim.
-
-
+Plug 'jelera/vim-javascript-syntax' "Enhanced JavaScript Syntax for Vim
+Plug 'othree/javascript-libraries-syntax.vim' " Syntax file for JavaScript libraries
 
 " post install (yarn install | npm install) then load plugin only for editing supported files
 Plug 'prettier/vim-prettier', { 'do': 'npm install'  }
