@@ -15,6 +15,9 @@ let g:used_javascript_libs = 'vue'
 
 " enable prettier
 packloadall
+" make prettier format on save
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
 
 " Uncomment if you wish to have the .vimrc settings purely control prettier
 "let g:prettier#config#config_precedence = 'file-override'
