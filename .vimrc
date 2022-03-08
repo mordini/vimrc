@@ -51,7 +51,9 @@ let g:fzf_action = { 'ctrl-e': 'edit' }
 call plug#begin()
 Plug 'flazz/vim-colorschemes' "A bunch of colorschemes
 "Begin Set up vim like an IDE
-Plug 'sheerun/vim-polyglot' "A collection of language packs for Vim.
+"Plug 'sheerun/vim-polyglot' "A collection of language packs for Vim.
+
+
 
 " post install (yarn install | npm install) then load plugin only for editing supported files
 Plug 'prettier/vim-prettier', { 'do': 'npm install'  }
@@ -75,7 +77,8 @@ call plug#end()
 set t_Co=256
 "colorscheme Tomorrow-Night-Bright
 "colorscheme simple_dark 
-colorscheme DimRed
+"colorscheme DimRed
+colorscheme tender
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 ""If you're using tmux version 2.2 or later, you can remove the outermost
