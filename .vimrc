@@ -61,7 +61,7 @@ Plug 'flazz/vim-colorschemes' "A bunch of colorschemes
 "Begin Set up vim like an IDE
 Plug 'jelera/vim-javascript-syntax' "Enhanced JavaScript Syntax for Vim
 Plug 'othree/javascript-libraries-syntax.vim' " Syntax file for JavaScript libraries
-
+Plug 'aserebryakov/vim-todo-lists' " Todo list management
 " post install (yarn install | npm install) then load plugin only for editing supported files
 Plug 'prettier/vim-prettier', { 'do': 'npm install'  }
 
