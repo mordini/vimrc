@@ -8,9 +8,12 @@ sudo apt install fd-find
 cat ./extraconfigs/fzf-fdfind >> ~/.bashrc
 
 ## install the silver searcher
-## sudo apt install silversearcher-ag
+sudo apt install silversearcher-ag
 
-## Add ripgrep to fzf
+## install ripgrep
+sudo apt install ripgrep
+
+## Add ripgrep to fzf (only used for file finding I believe?  :Rg command works fine without this)
 ## cat ./extraconfigs/fzf-ripgrep >> ~/.bashrc
 
 ## setup for neovim
