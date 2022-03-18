@@ -70,7 +70,7 @@ Plug 'tomtom/tcomment_vim' " Comment stuff out
 Plug 'preservim/tagbar'
 Plug 'preservim/nerdtree'
 Plug 'dyng/ctrlsf.vim' "Enables asynchronously searching the file system. 
-Plug 'ervandew/supertab'
+" Plug 'ervandew/supertab'
 Plug 'PhilRunninger/nerdtree-visual-selection'
 " fuzzy finder, let's try this instead of nerdtree
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
