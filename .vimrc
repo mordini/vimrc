@@ -1,3 +1,6 @@
+" CoC configuration
+source ~/vimrc/extraconfigs/coc/coc.vim
+
 set nocompatible
 set number "show line numbers
 set tabstop=2
@@ -24,11 +27,6 @@ let g:prettier#autoformat_require_pragma = 0
 
 " single quotes over double quotes
 let g:prettier#config#single_quote = 'true'
-
-" Set up COC for vanilla vim
-set hidden
-set updatetime=300
-set shortmess=aFc
 
 inoremap <Down>  <NOP>
 inoremap <Left>  <NOP>
@@ -80,6 +78,12 @@ Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'} "Conquer of Completion (code completion)
 "End Set up vim like an IDE
 call plug#end()
+
+" Install missing plugins on Vim startup
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif
 
 set t_Co=256
 "colorscheme Tomorrow-Night-Bright
