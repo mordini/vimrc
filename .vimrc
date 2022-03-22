@@ -11,6 +11,9 @@ set incsearch  " Enable incremental search
 set hlsearch   " Enable highlight search
 filetype plugin indent on
 
+" fzf use Ag to respect .gitignore
+" let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
 " Enable vim-javascript
 syntax enable
 " Enable javascript-libraries-syntax for Vue
