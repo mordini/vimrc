@@ -1,6 +1,10 @@
 echo
 echo
 
+## Create .config/coc
+mkdir -p ~/.config/coc
+ln -sfn ~/vimrc/extraconfigs/coc/coc-settings.json ~/.config/coc/coc-settings.json
+
 ## Link .vimrc
 ln -sfn ~/vimrc ~/.vim && echo "source ~/vimrc/.vimrc" > ~/.vimrc
 echo "source ~/vimrc/.vimrc" > ~/.vimrc

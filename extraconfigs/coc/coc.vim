@@ -171,3 +171,5 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 let g:LanguageClient_serverCommands = {
       \ 'vue': ['vls']
       \ }
+" Install coc extensions automatically
+let g:coc_global_extensions=[ 'coc-vetur', 'coc-javascript', 'coc-css', 'coc-html',  'coc-json', 'coc-tsserver']
