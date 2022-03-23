@@ -1,5 +1,12 @@
+echo
+echo
+
 ## Link .vimrc
-ln -s ~/vimrc ~/.vim && echo "source ~/vimrc/.vimrc" > ~/.vimrc
+ln -sfn ~/vimrc ~/.vim && echo "source ~/vimrc/.vimrc" > ~/.vimrc
+echo "source ~/vimrc/.vimrc" > ~/.vimrc
+
+echo
+echo
 
 ## install node version manager NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
