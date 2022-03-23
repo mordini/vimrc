@@ -172,4 +172,4 @@ let g:LanguageClient_serverCommands = {
       \ 'vue': ['vls']
       \ }
 " Install coc extensions automatically
-let g:coc_global_extensions=[ 'coc-vetur', 'coc-css', 'coc-html',  'coc-json', 'coc-tsserver']
+let g:coc_global_extensions=[ '@yaegassy/coc-volar', 'coc-css', 'coc-html',  'coc-json', 'coc-tsserver']
