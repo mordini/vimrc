@@ -60,6 +60,7 @@ let g:fzf_action = { 'ctrl-e': 'edit' }
 
 call plug#begin()
 Plug 'flazz/vim-colorschemes' "A bunch of colorschemes
+Plug 'Mofiqul/vscode.nvim' "vscode dark/light scheme
 "Begin Set up vim like an IDE
 Plug 'jelera/vim-javascript-syntax' "Enhanced JavaScript Syntax for Vim
 Plug 'othree/javascript-libraries-syntax.vim' " Syntax file for JavaScript libraries
@@ -90,10 +91,19 @@ autocmd VimEnter *
       \| endif
 
 set t_Co=256
-"colorscheme Tomorrow-Night-Bright
-"colorscheme simple_dark 
-"colorscheme DimRed
-colorscheme tender
+
+" VSCODE THEMES
+" For dark theme
+let g:vscode_style = "dark"
+" For light theme
+" let g:vscode_style = "light"
+" Enable transparent background
+let g:vscode_transparency = 1
+" " Enable italic comment
+let g:vscode_italic_comment = 1
+" Disable nvim-tree background color
+let g:vscode_disable_nvimtree_bg = v:true
+colorscheme vscode
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 ""If you're using tmux version 2.2 or later, you can remove the outermost
