@@ -1,5 +1,6 @@
 " CoC configuration
 source ~/vimrc/extraconfigs/coc/coc.vim
+source ~/vimrc/keybinds.vim
 
 set nocompatible
 set number "show line numbers
