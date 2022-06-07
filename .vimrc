@@ -7,6 +7,7 @@ set number "show line numbers
 set tabstop=2
 set shiftwidth=2
 syntax on "enable syntax highlighting
+let g:vue_pre_processors = [] "No preprocessors for vue highlighting
 set expandtab "Use spaces when tabbing
 set incsearch  " Enable incremental search
 set hlsearch   " Enable highlight search
@@ -63,6 +64,7 @@ call plug#begin()
 Plug 'flazz/vim-colorschemes' "A bunch of colorschemes
 Plug 'Mofiqul/vscode.nvim' "vscode dark/light scheme
 "Begin Set up vim like an IDE
+Plug 'posva/vim-vue' " Vuejs highlighting
 Plug 'jelera/vim-javascript-syntax' "Enhanced JavaScript Syntax for Vim
 Plug 'othree/javascript-libraries-syntax.vim' " Syntax file for JavaScript libraries
 Plug 'aserebryakov/vim-todo-lists' " Todo list management
