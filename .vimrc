@@ -2,7 +2,7 @@
 source ~/vimrc/extraconfigs/coc/coc.vim
 source ~/vimrc/keybinds.vim
 " Disable CoC until we can sort out why it's slow
-:CocDisable
+autocmd BufNew, BufEnter execute "silent! CocDisable"
 
 set nocompatible
 set number "show line numbers
