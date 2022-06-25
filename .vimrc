@@ -108,8 +108,8 @@ let g:vscode_transparency = 1
 let g:vscode_italic_comment = 1
 " Disable nvim-tree background color
 let g:vscode_disable_nvimtree_bg = v:true
-" colorscheme vscode
-colorscheme calmar256-light
+colorscheme vscode
+" colorscheme calmar256-light
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 ""If you're using tmux version 2.2 or later, you can remove the outermost
