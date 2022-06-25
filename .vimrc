@@ -1,6 +1,8 @@
 " CoC configuration
 source ~/vimrc/extraconfigs/coc/coc.vim
 source ~/vimrc/keybinds.vim
+" Disable CoC until we can sort out why it's slow
+:CocDisable
 
 set nocompatible
 set number "show line numbers
@@ -97,7 +99,7 @@ set t_Co=256
 
 " VSCODE THEMES
 " For dark theme
-let g:vscode_style = "dark"
+" let g:vscode_style = "dark"
 " For light theme
 " let g:vscode_style = "light"
 " Enable transparent background
@@ -106,7 +108,8 @@ let g:vscode_transparency = 1
 let g:vscode_italic_comment = 1
 " Disable nvim-tree background color
 let g:vscode_disable_nvimtree_bg = v:true
-colorscheme vscode
+" colorscheme vscode
+colorscheme calmar256-light
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 ""If you're using tmux version 2.2 or later, you can remove the outermost
