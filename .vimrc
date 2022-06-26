@@ -1,8 +1,6 @@
 " CoC configuration
-source ~/vimrc/extraconfigs/coc/coc.vim
+" source ~/vimrc/extraconfigs/coc/coc.vim
 source ~/vimrc/keybinds.vim
-" Disable CoC until we can sort out why it's slow
-CocDisable
 
 set nocompatible
 set number "show line numbers
@@ -85,7 +83,7 @@ Plug 'PhilRunninger/nerdtree-visual-selection'
 " fuzzy finder, let's try this instead of nerdtree
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'} "Conquer of Completion (code completion)
+" Plug 'neoclide/coc.nvim', {'branch': 'release'} "Conquer of Completion (code completion)
 "End Set up vim like an IDE
 call plug#end()
 
