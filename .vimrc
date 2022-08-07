@@ -97,7 +97,7 @@ set t_Co=256
 
 " VSCODE THEMES
 " For dark theme
-" let g:vscode_style = "dark"
+let g:vscode_style = "dark"
 " For light theme
 " let g:vscode_style = "light"
 " Enable transparent background
