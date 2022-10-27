@@ -34,13 +34,14 @@ let g:prettier#autoformat_require_pragma = 0
 " single quotes over double quotes
 let g:prettier#config#single_quote = 'true'
 
-inoremap <Down>  <NOP>
+inoremap <Down> <NOP>
 inoremap <Left>  <NOP>
 inoremap <Right> <NOP>
-noremap  <Up>    <NOP>
-noremap  <Down>  <NOP>
-noremap  <Left>  <NOP>
-noremap  <Right> <NOP>
+noremap  <Up>    :res -1 <CR>
+noremap  <Down>  :res +1 <CR>
+noremap  <Left>  :vertical resize -1<CR>
+noremap  <Right> :vertical resize +1<CR>
+
 " buffer switcher
 noremap <Leader>b :ls<CR>:b
 nnoremap <leader>n :NERDTreeFocus<CR>
@@ -60,7 +61,12 @@ let g:fzf_action = { 'ctrl-e': 'edit' }
 " https://rietta.com/blog/hide-gitignored-files-fzf-vim/
 " nnoremap <expr> <C-p> (len(system('git rev-parse')) ? ':Files' : ':GFiles --exclude-standard --others --cached')."\<cr>"
 
+" Configure slime for tmux
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
+
 call plug#begin()
+Plug 'jpalardy/vim-slime'
 Plug 'flazz/vim-colorschemes' "A bunch of colorschemes
 Plug 'Mofiqul/vscode.nvim' "vscode dark/light scheme
 "Begin Set up vim like an IDE
@@ -74,6 +80,7 @@ Plug 'prettier/vim-prettier', { 'do': 'npm install'  }
 Plug 'jiangmiao/auto-pairs' "close quotes, brackets, etc etc
 Plug 'alvan/vim-closetag' "automatically close (x)html tags
 Plug 'tpope/vim-surround' "change matching "surrounds" like <b> </b> using "csX" (change.surround.X)
+Plug 'tpope/vim-repeat'
 Plug 'tomtom/tcomment_vim' " Comment stuff out
 Plug 'preservim/tagbar'
 Plug 'preservim/nerdtree'
