@@ -66,9 +66,16 @@ let g:slime_target = "tmux"
 let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
 
 call plug#begin()
-Plug 'jpalardy/vim-slime'
+" React Stuff
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'leafgarland/typescript-vim'
+
+"Plug 'jpalardy/vim-slime'
 Plug 'flazz/vim-colorschemes' "A bunch of colorschemes
 Plug 'Mofiqul/vscode.nvim' "vscode dark/light scheme
+
 "Begin Set up vim like an IDE
 Plug 'posva/vim-vue' " Vuejs highlighting
 Plug 'jelera/vim-javascript-syntax' "Enhanced JavaScript Syntax for Vim
