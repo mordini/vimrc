@@ -72,7 +72,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'leafgarland/typescript-vim'
 
-"Plug 'jpalardy/vim-slime'
+Plug 'metakirby5/codi.vim' "The interactive scratchpad for hackers. :Codi <languagename>
 Plug 'flazz/vim-colorschemes' "A bunch of colorschemes
 Plug 'Mofiqul/vscode.nvim' "vscode dark/light scheme
 
