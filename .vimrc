@@ -74,7 +74,7 @@ Plug 'leafgarland/typescript-vim'
 
 Plug 'metakirby5/codi.vim' "The interactive scratchpad for hackers. :Codi <languagename>
 Plug 'flazz/vim-colorschemes' "A bunch of colorschemes
-Plug 'Mofiqul/vscode.nvim' "vscode dark/light scheme
+" Plug 'Mofiqul/vscode.nvim' "vscode dark/light scheme
 
 "Begin Set up vim like an IDE
 Plug 'posva/vim-vue' " Vuejs highlighting
@@ -120,8 +120,11 @@ let g:vscode_transparency = 1
 let g:vscode_italic_comment = 1
 " Disable nvim-tree background color
 let g:vscode_disable_nvimtree_bg = v:true
-colorscheme vscode
+" colorscheme vscode
 " colorscheme calmar256-light
+" colorscheme 1989
+colorscheme PaperColor
+set background=dark
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 ""If you're using tmux version 2.2 or later, you can remove the outermost
