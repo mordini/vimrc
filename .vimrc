@@ -73,8 +73,15 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'leafgarland/typescript-vim'
 
 Plug 'metakirby5/codi.vim' "The interactive scratchpad for hackers. :Codi <languagename>
-Plug 'flazz/vim-colorschemes' "A bunch of colorschemes
-" Plug 'Mofiqul/vscode.nvim' "vscode dark/light scheme
+" Plug 'flazz/vim-colorschemes' "A bunch of colorschemes
+Plug 'Mofiqul/vscode.nvim' "vscode dark/light scheme
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'martinsione/darkplus.nvim'
+Plug 'folke/tokyonight.nvim'
+Plug 'tomasiser/vim-code-dark'
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 "Begin Set up vim like an IDE
 Plug 'posva/vim-vue' " Vuejs highlighting
@@ -111,20 +118,20 @@ set t_Co=256
 
 " VSCODE THEMES
 " For dark theme
-let g:vscode_style = "dark"
+" let g:vscode_style = "dark"
 " For light theme
 " let g:vscode_style = "light"
 " Enable transparent background
-let g:vscode_transparency = 1
+" let g:vscode_transparency = 1
 " " Enable italic comment
-let g:vscode_italic_comment = 1
+" let g:vscode_italic_comment = 1
 " Disable nvim-tree background color
-let g:vscode_disable_nvimtree_bg = v:true
+" let g:vscode_disable_nvimtree_bg = v:true
 " colorscheme vscode
 " colorscheme calmar256-light
 " colorscheme 1989
-colorscheme PaperColor
-set background=dark
+" colorscheme PaperColor
+" colorscheme dracula
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 ""If you're using tmux version 2.2 or later, you can remove the outermost
@@ -190,3 +197,15 @@ let g:closetag_shortcut = '>'
 let g:closetag_close_shortcut = '<leader>>'
 
 " END SETTINGS FOR VIM-CLOSETAG
+
+
+set t_Co=256
+set t_ut=
+colorscheme codedark
+" colorscheme tokyonight-night
+" lua require('vscode').change_style('dark')
+
+" Start LUALINE
+" lua << END
+" require('lualine').setup()
+" END
