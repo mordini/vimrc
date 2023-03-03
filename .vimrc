@@ -29,7 +29,7 @@ let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
 
 " Uncomment if you wish to have the .vimrc settings purely control prettier
-"let g:prettier#config#config_precedence = 'file-override'
+" let g:prettier#config#config_precedence = 'file-override'
 
 " single quotes over double quotes
 let g:prettier#config#single_quote = 'true'
@@ -59,6 +59,7 @@ let g:fzf_action = { 'ctrl-e': 'edit' }
 " If in git directory, show only files that are committed, staged, or unstaged
 " else use regular :Files
 " https://rietta.com/blog/hide-gitignored-files-fzf-vim/
+" let g:fuf_file_exclude = '\v\~$|\.o$|\.exe$|\.bak$|\.swp$|\.class$'
 " nnoremap <expr> <C-p> (len(system('git rev-parse')) ? ':Files' : ':GFiles --exclude-standard --others --cached')."\<cr>"
 
 " Configure slime for tmux
@@ -201,7 +202,7 @@ let g:closetag_close_shortcut = '<leader>>'
 
 set t_Co=256
 set t_ut=
-colorscheme codedark
+" colorscheme codedark
 " colorscheme tokyonight-night
 " lua require('vscode').change_style('dark')
 
