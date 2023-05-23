@@ -202,7 +202,7 @@ let g:closetag_close_shortcut = '<leader>>'
 
 set t_Co=256
 set t_ut=
-" colorscheme codedark
+colorscheme codedark
 " colorscheme tokyonight-night
 " lua require('vscode').change_style('dark')
 
